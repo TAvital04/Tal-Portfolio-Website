@@ -261,6 +261,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding-top: 6px;
+  margin-right: 48px;
 }
 
 .photo-frame {
@@ -505,40 +506,44 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 36px;
-  background-color: var(--green-surface);
-  border-radius: var(--radius-xl);
-  padding: 44px 48px;
-  border: 1px solid var(--green-border);
-  box-shadow: var(--shadow-gentle);
   margin-left: 72px;
   margin-right: 72px;
   width: calc(100% - 144px);
 }
 
 .skill-column {
+  background-color: var(--green-surface);
+  border-radius: var(--radius-xl);
+  padding: 36px 32px;
+  border: 1px solid var(--green-border);
+  box-shadow: var(--shadow-gentle);
   display: flex;
   flex-direction: column;
 }
 
-.skill-index {
-  font-size: 0.88rem;
-  font-weight: 800;
-  color: var(--green-text-subtle);
-  margin-bottom: 8px;
-}
-
 .skill-title {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: var(--green-darkest);
-  margin-bottom: 12px;
-  line-height: 1.3;
+  margin-bottom: 20px;
+  line-height: 1.25;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--green-border);
+  width: 100%;
 }
 
-.skill-body {
+.skill-tags-list {
+  list-style: disc;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skill-tags-list li {
   font-size: 1.05rem;
-  line-height: 1.75;
-  color: var(--green-text-muted);
+  color: var(--green-text-main);
+  line-height: 1.5;
 }
 
 /* Education: Balanced 2-Column Split */

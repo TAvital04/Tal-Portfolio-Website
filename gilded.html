@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tal Avital | Software Engineer (Luxe Slate &amp; Gold)</title>
+  <meta name="description" content="Portfolio of Tal Avital - Software Engineer specializing in embedded software, IoT systems, and agricultural technology.">
+  <meta name="author" content="Tal Avital">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230e1117'/><text x='50' y='68' font-family='sans-serif' font-size='56' font-weight='bold' text-anchor='middle' fill='%23d4af37'>T</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23111113'/><text x='50' y='68' font-family='sans-serif' font-size='56' font-weight='bold' text-anchor='middle' fill='%23d4af37'>T</text></svg>">
+  <link rel="stylesheet" href="gilded.css">
+</head>
+<body>
+
+  <!-- Top Version Switcher Bar -->
+  <aside class="version-banner" aria-label="Version Switcher">
+    <span>✨ Luxe Slate &amp; Gold Theme</span>
+    <span style="margin: 0 6px;">&bull;</span>
+    <a href="index.html">v1.0 Formal</a>
+    <span style="margin: 0 6px;">|</span>
+    <a href="casual.html">v2.0 Casual Green</a>
+    <span style="margin: 0 6px;">|</span>
+    <a href="fierce.html">v3.0 Fierce Executive</a>
+  </aside>
+
+  <div class="site-wrapper">
+    <!-- Top Navigation -->
+    <header class="site-header">
+      <a href="#about" class="site-logo">TAL AVITAL</a>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/Tal%20Avital%20Resume.pdf" download="Tal_Avital_Resume.pdf" class="nav-download-btn">Resume PDF</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="about">
+        <div class="hero-grid">
+          <div class="hero-main">
+            <h1 class="hero-name">Tal Avital</h1>
+            
+            <p class="hero-summary">
+              Computer Science student at the University of Central Florida specializing in software engineering, embedded firmware, and hardware prototyping. Passionate about applying low-power wireless networking, edge computer vision, and weather-resistant electronics to automated agricultural systems.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn-primary">Contact</a>
+            </div>
+          </div>
+
+          <div class="hero-aside">
+            <div class="photo-frame">
+              <img src="assets/Cover_Photo.jpg" alt="Tal Avital" class="hero-portrait">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section: Sleek Single-Project Showcase -->
+      <section class="section-block" id="experience">
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-heading">Professional Experience &amp; Projects</h2>
+          </div>
+        </div>
+
+        <div class="showcase-wrapper">
+          <!-- Interactive Selector Tabs -->
+          <div class="project-pill-nav" role="tablist">
+            <button class="project-pill-btn active" role="tab" id="tab-0" aria-controls="proj-0" aria-selected="true">
+              Face Recognition 2
+            </button>
+            <button class="project-pill-btn" role="tab" id="tab-1" aria-controls="proj-1" aria-selected="false">
+              IEEE Resume Database
+            </button>
+            <button class="project-pill-btn" role="tab" id="tab-2" aria-controls="proj-2" aria-selected="false">
+              BLE IoT Chat App
+            </button>
+            <button class="project-pill-btn" role="tab" id="tab-3" aria-controls="proj-3" aria-selected="false">
+              Face Recognition 1
+            </button>
+          </div>
+
+          <!-- Project 1 -->
+          <article class="project-panel active" id="proj-0" role="tabpanel" aria-labelledby="tab-0">
+            <div class="panel-header">
+              <div class="panel-title-area">
+                <h3 class="panel-title">Face Recognition 2</h3>
+                <div class="panel-subtitle">Personal Project &bull; Edge Hardware &amp; Environmental Deployment</div>
+              </div>
+              <span class="panel-date">June 2026 – Present</span>
+            </div>
+
+            <div class="tag-row">
+              <span class="tech-tag">Custom PCB</span>
+              <span class="tech-tag">Hand Soldering</span>
+              <span class="tech-tag">Buck Converter</span>
+              <span class="tech-tag">Power Electronics</span>
+              <span class="tech-tag">Weather-Resistant Enclosure</span>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Evolving the system hardware from a breadboard prototype to a self-designed and hand-soldered PCB.</li>
+              <li>Integrating a battery-powered buck converter topology to establish voltage regulation and wireless deployment.</li>
+              <li>Designing a weather-resistant enclosure to safeguard sensitive electronics from moisture and environmental elements.</li>
+            </ul>
+
+            <div class="panel-footer">
+              <div class="panel-meta-note">Status: Active hardware iteration and outdoor testing</div>
+              <div class="panel-controls">
+                <button type="button" class="ctrl-btn" id="prevProjectBtn">&larr; Previous</button>
+                <span class="ctrl-count" id="projectCounter">1 of 4</span>
+                <button type="button" class="ctrl-btn" id="nextProjectBtn">Next &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-panel" id="proj-1" role="tabpanel" aria-labelledby="tab-1">
+            <div class="panel-header">
+              <div class="panel-title-area">
+                <h3 class="panel-title">Member Resume Database Project Lead</h3>
+                <div class="panel-subtitle">IEEE, UCF &bull; Orlando, FL</div>
+              </div>
+              <span class="panel-date">September 2025 – Present</span>
+            </div>
+
+            <div class="tag-row">
+              <span class="tech-tag">Leadership</span>
+              <span class="tech-tag">Frontend Architecture</span>
+              <span class="tech-tag">Database Schema</span>
+              <span class="tech-tag">UI/UX Discovery</span>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Leading the initiative for a front end that streamlines talent acquisition through IEEE UCF.</li>
+              <li>Collaborating with IEEE UCF Outreach and Professional Development committees to map target audience requirements, define administrative data scopes, and align database fields with student profiles.</li>
+              <li>Spearheading product discovery and user outreach by gathering feedback from students, university employers, and technical recruiters to continuously refine directory UI/UX.</li>
+            </ul>
+
+            <div class="panel-footer">
+              <div class="panel-meta-note">Role: Lead Developer &amp; Outreach Lead</div>
+              <div class="panel-controls">
+                <button type="button" class="ctrl-btn" onclick="document.getElementById('prevProjectBtn').click()">&larr; Previous</button>
+                <span class="ctrl-count">2 of 4</span>
+                <button type="button" class="ctrl-btn" onclick="document.getElementById('nextProjectBtn').click()">Next &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-panel" id="proj-2" role="tabpanel" aria-labelledby="tab-2">
+            <div class="panel-header">
+              <div class="panel-title-area">
+                <h3 class="panel-title">Bluetooth Low-Energy Chat App</h3>
+                <div class="panel-subtitle">EEL 4932 - Internet of Things, UCF &bull; Orlando, FL</div>
+              </div>
+              <span class="panel-date">March 2026 – April 2026</span>
+            </div>
+
+            <div class="tag-row">
+              <span class="tech-tag">Silicon Labs SDK</span>
+              <span class="tech-tag">BLE Stack</span>
+              <span class="tech-tag">UART Drivers</span>
+              <span class="tech-tag">Terminal UI</span>
+              <span class="tech-tag">RSSI Metrics</span>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Engineered a Bluetooth Low Energy (BLE) wireless chat network using Silicon Labs’ SDK.</li>
+              <li>Implemented UART communication drivers to transfer data between a microcontroller and a host computer.</li>
+              <li>Designed a terminal user interface to handle configuration states, device discovery, connection approvals, and user input.</li>
+              <li>Utilized RSSI measurements to reliably trigger system alerts when signal degradation crosses critical thresholds.</li>
+              <li>Routed low-level Bluetooth stack events that automate the program cycle.</li>
+            </ul>
+
+            <div class="panel-footer">
+              <div class="panel-meta-note">Coursework: Internet of Things Systems</div>
+              <div class="panel-controls">
+                <button type="button" class="ctrl-btn" onclick="document.getElementById('prevProjectBtn').click()">&larr; Previous</button>
+                <span class="ctrl-count">3 of 4</span>
+                <button type="button" class="ctrl-btn" onclick="document.getElementById('nextProjectBtn').click()">Next &rarr;</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-panel" id="proj-3" role="tabpanel" aria-labelledby="tab-3">
+            <div class="panel-header">
+              <div class="panel-title-area">
+                <h3 class="panel-title">Face Recognition 1</h3>
+                <div class="panel-subtitle">Personal Project &bull; Edge AI &amp; Serverless Pipeline</div>
+              </div>
+              <span class="panel-date">December 2024 – January 2025</span>
+            </div>
+
+            <div class="tag-row">
+              <span class="tech-tag">ESP32-CAM</span>
+              <span class="tech-tag">AWS Lambda</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Computer Vision</span>
+            </div>
+
+            <ul class="bullet-list">
+              <li>Engineered a facial verification system to validate image captures against a whitelist database.</li>
+              <li>Deployed an ESP32-CAM microcontroller to capture and offload raw JPEG binaries to an AWS Lambda HTTP endpoint.</li>
+              <li>Architected an AWS cloud pipeline for computer vision processing, offloading intense AI algorithms from the edge device.</li>
+              <li>Leveraged Docker to replicate the Amazon Linux environment on a Windows host to cross-compile the OS-specific dependencies.</li>
+            </ul>
+
+            <div class="panel-footer">
+              <div>
+                <a href="https://github.com/TAvital04/Facial-Recognition-Project" target="_blank" rel="noopener noreferrer" class="link-inline">
+                  GitHub Repository &rarr;
+                </a>
+              </div>
+              <div class="panel-controls">
+                <button type="button" class="ctrl-btn" onclick="document.getElementById('prevProjectBtn').click()">&larr; Previous</button>
+                <span class="ctrl-count">4 of 4</span>
+                <button type="button" class="ctrl-btn" onclick="document.getElementById('nextProjectBtn').click()">Next &rarr;</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Technical Skills Section -->
+      <section class="section-block" id="skills">
+        <div class="section-header-row">
+          <div>
+            <span class="section-kicker">Core Competencies</span>
+            <h2 class="section-heading">Technical Experience</h2>
+          </div>
+          <span class="section-guide-note">Top left is most experienced</span>
+        </div>
+
+        <div class="skills-tri-layout">
+          <div class="skill-column">
+            <h3 class="skill-title">System Architectures &amp; Topologies</h3>
+            <ul class="skill-tags-list">
+              <li>Bare-Metal C Firmware</li>
+              <li>RTOS Task Scheduling</li>
+              <li>Distributed Topologies (Client/Server, BLE)</li>
+              <li>Concurrent &amp; Event-Driven Design</li>
+              <li>Protocols: UART, I2C, SPI, BLE, HTTP</li>
+            </ul>
+          </div>
+
+          <div class="skill-column">
+            <h3 class="skill-title">Software Tools &amp; Infrastructure</h3>
+            <ul class="skill-tags-list">
+              <li>Git / GitHub Workflow</li>
+              <li>Embedded SDKs (Silicon Labs, ESP-IDF)</li>
+              <li>Vim / Linux Shell Scripting</li>
+              <li>Arch Linux Environment</li>
+              <li>Docker Containerization</li>
+              <li>AWS Cloud (Lambda, S3)</li>
+            </ul>
+          </div>
+
+          <div class="skill-column">
+            <h3 class="skill-title">Hardware Lab &amp; Prototyping</h3>
+            <ul class="skill-tags-list">
+              <li>Datasheet Analysis</li>
+              <li>Custom PCB Design (EasyEDA)</li>
+              <li>Soldering &amp; Prototyping</li>
+              <li>Multimeter &amp; Scope Diagnostics</li>
+              <li>Voltage Buck Converters</li>
+              <li>Weather-Resistant Enclosures</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="section-block" id="education">
+        <div class="section-header-row">
+          <div>
+            <span class="section-kicker">Academics</span>
+            <h2 class="section-heading">Education</h2>
+          </div>
+        </div>
+
+        <div class="edu-split-layout">
+          <div class="edu-column">
+            <div class="edu-role-title">B.S. In Computer Science</div>
+            <div class="edu-institution">University of Central Florida &bull; Orlando, FL</div>
+            <div class="edu-timeline">August 2024 – Present &bull; Expected May 2027</div>
+            <ul class="bullet-list">
+              <li>Studying programming techniques that prioritize established algorithms and data structures.</li>
+              <li>Attending workshops for GitHub, Linux, AI, Parallel Computing, Docker, and more.</li>
+              <li>Attending events from tech companies to learn industry standards and best practices.</li>
+              <li>Experiencing the software development life cycle as both a developer and project lead.</li>
+            </ul>
+          </div>
+
+          <div class="edu-column">
+            <div class="edu-role-title">Relevant Coursework</div>
+            <div class="edu-institution">University of South Florida &bull; Tampa, FL</div>
+            <div class="edu-timeline">August 2022 – May 2024</div>
+            <ul class="bullet-list">
+              <li>Completed foundational coursework in Calculus, Physics, and Statistics.</li>
+              <li>Built a professional engineering network through the Theta Tau Engineering Fraternity.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <div class="contact-inner">
+          <span class="section-kicker">Get in Touch</span>
+          <h2 class="contact-heading">Contact &amp; Collaboration</h2>
+          <p class="contact-desc">
+            Interested in collaboration, engineering internships, embedded systems research, or agricultural technology firmware? Reach out anytime:
+          </p>
+
+          <div class="contact-chips-row">
+            <div class="contact-chip">
+              <span class="chip-label">Email</span>
+              <a href="mailto:tal.avital04@gmail.com" class="chip-val">tal.avital04@gmail.com</a>
+            </div>
+            <div class="contact-chip">
+              <span class="chip-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/tal-avital-profile" target="_blank" rel="noopener noreferrer" class="chip-val">in/tal-avital-profile</a>
+            </div>
+            <div class="contact-chip">
+              <span class="chip-label">GitHub</span>
+              <a href="https://github.com/TAvital04" target="_blank" rel="noopener noreferrer" class="chip-val">github.com/TAvital04</a>
+            </div>
+            <div class="contact-chip">
+              <span class="chip-label">Phone &amp; Location</span>
+              <a href="tel:+12016373238" class="chip-val">+1 (201) 637-3238</a>
+              <span class="chip-sub">Orlando, FL &bull; US Citizen</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div>&copy; 2026 Tal Avital &bull; Software Engineer</div>
+      <div class="footer-alt-link">
+        <a href="index.html">v1.0 Formal</a> &bull; 
+        <a href="casual.html">v2.0 Casual Green</a> &bull; 
+        <a href="fierce.html">v3.0 Fierce Executive</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="gilded.js"></script>
+</body>
+</html>
