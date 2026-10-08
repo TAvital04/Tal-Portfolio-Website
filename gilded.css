@@ -112,7 +112,7 @@ body {
 /* Site Navigation - Floating Pill */
 .site-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 16px 28px;
   background-color: var(--bg-surface);
@@ -534,28 +534,53 @@ body {
   line-height: 1.5;
 }
 
-/* Education Layout */
-.edu-split-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  background-color: var(--bg-surface);
-  border-radius: var(--radius-xl);
-  padding: 44px 48px;
-  border: 1px solid var(--border-slate);
-  box-shadow: var(--shadow-luxe);
+/* Education: Prominent Primary Degree & Subordinate Prior Coursework */
+.edu-stack-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   margin-left: 72px;
   margin-right: 72px;
   width: calc(100% - 144px);
 }
 
-.edu-column {
+.edu-primary-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-xl);
+  padding: 36px 40px;
+  border: 1px solid var(--border-slate);
+  box-shadow: var(--shadow-luxe);
   display: flex;
   flex-direction: column;
 }
 
+.edu-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background-color: var(--gold-accent);
+  color: #0b0f19;
+  padding: 3px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.edu-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed var(--border-gold-subtle);
+}
+
 .edu-role-title {
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   font-weight: 800;
   color: var(--text-main);
 }
@@ -567,11 +592,68 @@ body {
   font-weight: 600;
 }
 
-.edu-timeline {
+.edu-timeline-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gold-accent);
+  background-color: var(--bg-surface-alt);
+  border: 1px solid var(--border-gold-subtle);
+  padding: 6px 14px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.edu-secondary-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-md);
+  padding: 14px 24px;
+  border: 1px dashed var(--border-gold-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.edu-sec-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.edu-sec-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.edu-sec-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--gold-accent);
+  background-color: rgba(212, 175, 55, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.edu-sec-school {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--gold-text);
-  margin: 8px 0 16px 0;
+  color: var(--text-main);
+}
+
+.edu-sec-details {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.edu-sec-dates {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  white-space: nowrap;
 }
 
 /* Contact Section */
@@ -604,7 +686,7 @@ body {
 
 .contact-chips-row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   margin-left: 48px;
 }
@@ -687,6 +769,7 @@ body {
   .showcase-wrapper,
   .skills-tri-layout,
   .edu-split-layout,
+  .edu-stack-layout,
   .contact-section,
   .bullet-list,
   .contact-desc,
